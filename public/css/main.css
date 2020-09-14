@@ -1,0 +1,91 @@
+:root{
+    --border: solid 1px #ccc;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+header{
+    background-color: rgb(220, 158, 158);
+    padding: 10px;
+    color: white;
+}
+
+main{
+    width: 600px;
+    margin: 100px auto;
+    
+}
+
+button{
+    border-radius: 3px;
+    outline: none;
+    border: none;
+}
+
+#display{
+    padding: 40px;
+    text-align: right;
+    color: tomato;
+    font-weight: bold;
+}
+
+#editor{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 80% 19%;
+    column-gap: 5px;
+    background-color: white;
+}
+
+#editor button, button{
+    padding: 10px;
+    cursor: pointer;
+}
+
+#editor #input-container{
+    display: grid;
+    grid-template-columns: 55% 25% 20%;
+    border: var(--border);
+}
+
+#editor input, #editor select{
+    padding: 10px;
+    border: none;
+    outline: none;
+    
+}
+
+#items{
+    border: var(--border);
+    background-color: white;
+}
+
+#items .item{
+    display: grid;
+    grid-template-columns: 20% 69% 5%;
+    align-items: center;
+    padding: 10px;
+   
+}
+
+#items .currency{
+    color: grey;
+}
+
+#items .item:hover{
+    background-color: rgba(202, 193, 193, 0.515);
+}
+
+#items .item:hover .currency{
+    color:  rgb(133, 130, 130);
+}
